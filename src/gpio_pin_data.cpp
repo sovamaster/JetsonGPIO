@@ -226,7 +226,7 @@ PIN_DATA::PIN_DATA()
         }
 
     {
-};
+}
 
 
 
@@ -379,8 +379,9 @@ GPIO_data get_data(){
                 string chip_pwm_pwmchip_dir = chip_pwm_dir + "/" + fn;
                 pwm_dirs[chip_dir] = chip_pwm_pwmchip_dir;
                 return chip_pwm_pwmchip_dir.c_str();
-            return "None";
+            
             }
+	    return "None";
         };
 
 
